@@ -40,6 +40,11 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.lang.json" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
+	
+	{ "neovim/nvim-lspconfig" },
+	{"ms-jpq/coq_nvim"},
+
+	
     { import = "plugins" },
   },
   defaults = {
