@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "html" , "java_language_server"}
+	ensure_installed = { "lua_ls", "html","jdtls"}
 })
 
 local on_attach = function (_,_)
@@ -14,6 +14,10 @@ require("lspconfig").lua_ls.setup{
 require("lspconfig").html.setup{
 	on_attach = on_attach
 }
-require("lspconfig").java_language_server.setup{
-cmd = { 'java', 'C:\\Users\\huber\\Documents\\nvim\\language_server\\java-language-server\\dist\\lang_server_windows.sh' }
+
+require'lspconfig'.jdtls.setup {
+  cmd = { 'jdtls', '--stdio' },
+  filetypes = { 'java' },
 }
+
+
