@@ -2,13 +2,18 @@ require("lazy").setup({
  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     {'nvim-telescope/telescope.nvim', tag = '0.1.6',
 -- or                              , branch = '0.1.x',
-      dependencies = { 'nvim-lua/plenary.nvim' }},
-  "folke/which-key.nvim",
+      dependencies = { 'nvim-lua/plenary.nvim',
+      'BurntSushi/ripgrep' -----  for live-grep to work
+
+ }},
+ "folke/which-key.nvim",
   
   "williamboman/mason.nvim",
 "williamboman/mason-lspconfig.nvim",   -- for lsp to work
-  "neovim/nvim-lspconfig",
-  "nvim-treesitter/nvim-treesitter",
+
+{
+    "nvim-treesitter/nvim-treesitter",
+ },
   
   "neovim/nvim-lspconfig",
   'hrsh7th/cmp-nvim-lsp',
@@ -49,12 +54,14 @@ require("lazy").setup({
     "rcarriga/nvim-notify",
     }
 },
-
-  {
-    "nvimdev/dashboard-nvim",    -------------------------------------------------------------not working
-  },
+{
+  'nvimdev/dashboard-nvim',
+  event = 'VimEnter',
+  dependencies = { {'nvim-tree/nvim-web-devicons'}}
+}
+  ,
   "ryanoasis/vim-devicons",   --- for icons Supports plugins such as NERDTree, vim-airline, CtrlP, powerline, denite, unite, lightline.vim, vim-startify, vimfiler, vim-buffet and flagship.
 
-{"preservim/nerdtree" , name = "nerdtree" }
+"preservim/nerdtree",   -- to show file structures on the side 
  })
 
