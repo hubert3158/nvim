@@ -17,6 +17,9 @@ require("lazy").setup({
   'hrsh7th/nvim-cmp',
   "hrsh7th/cmp-vsnip", --snippets
   "hrsh7th/vim-vsnip", --snippets
+  
+  'vim-airline/vim-airline', -- bottom status bar
+  'vim-airline/vim-airline-themes', --bottom status bar themes
 
  })
 
