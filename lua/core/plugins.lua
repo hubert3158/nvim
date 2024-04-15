@@ -10,12 +10,12 @@ require("lazy").setup({
   
   "williamboman/mason.nvim",
 "williamboman/mason-lspconfig.nvim",   -- for lsp to work
+  "neovim/nvim-lspconfig",
 
 {
     "nvim-treesitter/nvim-treesitter",
  },
   
-  "neovim/nvim-lspconfig",
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/cmp-buffer',
   'hrsh7th/cmp-path',
@@ -63,5 +63,12 @@ require("lazy").setup({
   "ryanoasis/vim-devicons",   --- for icons Supports plugins such as NERDTree, vim-airline, CtrlP, powerline, denite, unite, lightline.vim, vim-startify, vimfiler, vim-buffet and flagship.
 
 "preservim/nerdtree",   -- to show file structures on the side 
- })
+{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },   --colors and theme
+{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},  -- colors and theme
+"alacritty/alacritty",
+"easymotion/vim-easymotion",
+"justinmk/vim-sneak",
+"machakann/vim-highlightedyank",
+ }
+ )
 

@@ -8,3 +8,7 @@ require("core.plugin_config.mininvim")
 require("core.plugin_config.noice")
 require("core.plugin_config.nerdtree")
 require("core.plugin_config.dashboard")
+require("core.plugin_config.gruvbox")
+--require("core.plugin_config.catppuccin") -- uncomment if i wanna switch
+require("core.plugin_config.alacritty")
+require("core.plugin_config.airlinetheme")
