@@ -2,7 +2,6 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
 
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -18,11 +17,6 @@ require("core.keymaps")
 require("core.plugins")
 require("core.plugin_config")
 
-
---extra lua 
+--extra lua
 require("core.highlight")
 require("core.linenocolor")
-
-
-
-

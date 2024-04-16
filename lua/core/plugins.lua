@@ -68,6 +68,9 @@ require("lazy").setup({
 "alacritty/alacritty",
 "easymotion/vim-easymotion",
 "justinmk/vim-sneak",
+"sbdchd/neoformat",   -- for formatting code
+"zbirenbaum/copilot.lua",
+
  }
  )
 
