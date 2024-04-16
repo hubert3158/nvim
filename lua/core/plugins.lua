@@ -70,6 +70,7 @@ require("lazy").setup({
 "justinmk/vim-sneak",
 "sbdchd/neoformat",   -- for formatting code
 "zbirenbaum/copilot.lua",
+"NvChad/nvim-colorizer.lua",
 
  }
  )
