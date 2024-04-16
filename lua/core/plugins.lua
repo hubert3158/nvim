@@ -68,7 +68,6 @@ require("lazy").setup({
 "alacritty/alacritty",
 "easymotion/vim-easymotion",
 "justinmk/vim-sneak",
-"machakann/vim-highlightedyank",
  }
  )
 
