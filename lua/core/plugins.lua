@@ -63,7 +63,6 @@ require("lazy").setup({
 "preservim/nerdtree",   -- to show file structures on the side 
 { "catppuccin/nvim", name = "catppuccin", priority = 1000 },   --colors and theme
 { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},  -- colors and theme
-"easymotion/vim-easymotion",
 "justinmk/vim-sneak",
 "sbdchd/neoformat",   -- for formatting code
 "zbirenbaum/copilot.lua",
@@ -77,5 +76,7 @@ require("lazy").setup({
   "rcarriga/nvim-notify",
    "karb94/neoscroll.nvim",  -- for smooth scroll
    "Pocco81/auto-save.nvim",
+   "hadronized/hop.nvim",
+   "tpope/vim-surround",   --	
  })
 
