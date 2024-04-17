@@ -76,5 +76,6 @@ require("lazy").setup({
 },
 { "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
   "rcarriga/nvim-notify",
+   "karb94/neoscroll.nvim",  -- for smooth scroll
  })
 
