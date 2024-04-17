@@ -2,7 +2,7 @@
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "html","jdtls"}
+	ensure_installed = { "lua_ls", "html","jdtls","vtsls"}
 }
 
 )
@@ -25,4 +25,7 @@ require("lspconfig").jdtls.setup {
 on_attach = on_attach,
 }
 
+require("lspconfig").vtsls.setup {
+on_attach = on_attach,
+}
 

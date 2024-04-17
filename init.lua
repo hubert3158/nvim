@@ -2,6 +2,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
 vim.opt.termguicolors = true  -- required by notify plugin to show 24 bit colors or something like that idk
+vim.opt.cursorline= true  -- required by notify plugin to show 24 bit colors or something like that idk
 
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

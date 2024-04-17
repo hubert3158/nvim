@@ -1,5 +1,5 @@
 -- Variable to control dynamic coloring
-local dynamic_coloring = false
+local dynamic_coloring = true 
 
 -- Function to generate a random color
 local function random_color()
