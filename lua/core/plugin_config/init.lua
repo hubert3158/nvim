@@ -10,7 +10,6 @@ require("core.plugin_config.nerdtree")
 require("core.plugin_config.dashboard")
 require("core.plugin_config.gruvbox")
 --require("core.plugin_config.catppuccin") -- uncomment if i wanna switch
-require("core.plugin_config.alacritty")
 require("core.plugin_config.airlinetheme")
 require("core.plugin_config.copilot")
 require("core.plugin_config.colorizer")
