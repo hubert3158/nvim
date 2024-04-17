@@ -29,8 +29,6 @@ require("lazy").setup({
   
   'tpope/vim-commentary', --for comments
   
-  'rcarriga/nvim-notify' , -- to get nice notifications
-   
    {
   'stevearc/dressing.nvim',   -------------------------------------------------------------not working
   opts = {},
@@ -71,7 +69,12 @@ require("lazy").setup({
 "sbdchd/neoformat",   -- for formatting code
 "zbirenbaum/copilot.lua",
 "NvChad/nvim-colorizer.lua",
-
- }
- )
+{
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" }  --Getting you where you want with the fewest keystrokes
+},
+{ "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
+  "rcarriga/nvim-notify",
+ })
 
