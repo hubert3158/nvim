@@ -75,8 +75,10 @@ require("lazy").setup({
 { "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
   "rcarriga/nvim-notify",
    "karb94/neoscroll.nvim",  -- for smooth scroll
-   "Pocco81/auto-save.nvim",
+   --"Pocco81/auto-save.nvim",
    "hadronized/hop.nvim",
    "tpope/vim-surround",   --	
+     { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } }, -- nice todo/fixme/notify comments
+
  })
 
