@@ -80,5 +80,7 @@ require("lazy").setup({
    "tpope/vim-surround",   --	
      { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } }, -- nice todo/fixme/notify comments
 
+     {'tpope/vim-fugitive'}
+
  })
 

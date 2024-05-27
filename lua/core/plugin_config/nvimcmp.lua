@@ -13,14 +13,14 @@
       end,
     },
     window = {
-      -- completion = cmp.config.window.bordered(),
-      -- documentation = cmp.config.window.bordered(),
+       completion = cmp.config.window.bordered(),
+       documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
-      ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-      ['<C-f>'] = cmp.mapping.scroll_docs(4),
-      ['<C-Space>'] = cmp.mapping.complete(),
-      ['<C-e>'] = cmp.mapping.abort(),
+      -- ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+      -- ['<C-f>'] = cmp.mapping.scroll_docs(4),
+      -- ['<C-Space>'] = cmp.mapping.complete(),
+      -- ['<C-e>'] = cmp.mapping.abort(),
       ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({
@@ -30,7 +30,6 @@
       -- { name = 'ultisnips' }, -- For ultisnips users.
       -- { name = 'snippy' }, -- For snippy users.
     }, {
-      { name = 'buffer' },
     })
   })
 
@@ -63,12 +62,19 @@
   })
 
   -- Set up lspconfig.
-  local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  cmp.event:on("menu_opened", function()
-  vim.b.copilot_suggestion_hidden = true
-end)
+  -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
+  -- -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+  --  require('lspconfig')['lua-language-server'].setup {
+  --   capabilities = capabilities
+  -- }
+  --  
+  --
+  --
+  --
+  -- cmp.event:on("menu_opened", function()
+  -- vim.b.copilot_suggestion_hidden = true
+-- end)
 
-cmp.event:on("menu_closed", function()
-  vim.b.copilot_suggestion_hidden = false
-end)
+-- cmp.event:on("menu_closed", function()
+  -- vim.b.copilot_suggestion_hidden = false
+-- end)
