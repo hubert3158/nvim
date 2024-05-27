@@ -17,3 +17,20 @@ vim.api.nvim_set_keymap("n", "<leader>r", ":Neoformat<CR>", { silent = true })
 --map <leader>f <Plug>(easymotion-s)
 vim.api.nvim_set_keymap("n", "<leader>S", "<Plug>(Sneak-s)", { silent = true })
 vim.api.nvim_set_keymap("n", "<leader>s", "<Plug>(Sneak_S)", { silent = true })
+
+--- Vim fugitive
+vim.api.nvim_set_keymap("n", "<leader>gs", ":G status<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>ga", ":G add %<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>gA", ":G add .<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>gc", ":G commit -v<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>gph", ":G push<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>gpl", ":G pull<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>gb", ":G blame<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>gd", ":G diff<CR>", { silent = true })
+--log
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>gl",
+	":G log --graph --pretty=format:'%C(auto)%h %d %s %C(bold blue)<%an> %C(white)(%ar)' --all<CR>",
+	{ silent = true }
+)
