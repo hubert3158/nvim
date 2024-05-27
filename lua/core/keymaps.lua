@@ -21,7 +21,7 @@ vim.api.nvim_set_keymap("n", "<leader>s", "<Plug>(Sneak_S)", { silent = true })
 --- Vim fugitive
 vim.api.nvim_set_keymap("n", "<leader>gs", ":G status<CR>", { silent = true })
 vim.api.nvim_set_keymap("n", "<leader>ga", ":G add %<CR>", { silent = true })
-vim.api.nvim_set_keymap("n", "<leader>gA", ":G add .<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>gaa", ":G add .<CR>", { silent = true })
 vim.api.nvim_set_keymap("n", "<leader>gc", ":G commit -v<CR>", { silent = true })
 vim.api.nvim_set_keymap("n", "<leader>gph", ":G push<CR>", { silent = true })
 vim.api.nvim_set_keymap("n", "<leader>gpl", ":G pull<CR>", { silent = true })

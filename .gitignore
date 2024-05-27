@@ -1,1 +1,53 @@
+# Byte-compiled / optimized / DLL files
+*.luac
 lazy-lock.json
+
+# Logs
+logs/
+*.log
+
+# Runtime files
+*.out
+*.pid
+
+# Compiled Object files
+*.o
+*.obj
+*.so
+*.dll
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Dependency directories
+deps/
+lib/
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# LuaRocks artifacts
+luarocks.lock
+.luarocks/
+
+# Lua specific config
+.luarc.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Test outputs
+test_output/
+coverage/
+
+# Temporary files
+temp/
+tmp/
+
