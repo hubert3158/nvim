@@ -80,8 +80,17 @@ require("lazy").setup({
      { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } }, -- nice todo/fixme/notify comments
      {'tpope/vim-fugitive'},
 
+
+
+
     "williamboman/mason.nvim",            --
     "mfussenegger/nvim-dap",              --  -- https://github.com/jay-babu/mason-nvim-dap.nvim
     "jay-babu/mason-nvim-dap.nvim",       --
+    { "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
+    { "folke/neodev.nvim", opts = {} },
+
+
+
+
  })
 
