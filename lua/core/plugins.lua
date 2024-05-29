@@ -72,7 +72,6 @@ require("lazy").setup({
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" }  --Getting you where you want with the fewest keystrokes
 },
-{ "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
   "rcarriga/nvim-notify",
    "karb94/neoscroll.nvim",  -- for smooth scroll
    --"Pocco81/auto-save.nvim",
@@ -81,5 +80,8 @@ require("lazy").setup({
      { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } }, -- nice todo/fixme/notify comments
      {'tpope/vim-fugitive'},
 
+    "williamboman/mason.nvim",            --
+    "mfussenegger/nvim-dap",              --  -- https://github.com/jay-babu/mason-nvim-dap.nvim
+    "jay-babu/mason-nvim-dap.nvim",       --
  })
 
