@@ -5,7 +5,7 @@ harpoon:setup()
 -- REQUIRED
 
 vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
---harpoon list remove
+--harpoon list remove 
 vim.keymap.set("n", "<leader>hc", function() harpoon:list():remove() end)
 vim.keymap.set("n", "<leader>hl", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
