@@ -5,6 +5,9 @@ vim.opt.incsearch = true -- Do incremental searching. map Q gq
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.ignorecase = true
+
+
+
 vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>p", ":Neotree<CR>", { silent = true })
 

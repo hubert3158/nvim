@@ -76,7 +76,7 @@ require("lazy").setup({
 	},
 	"rcarriga/nvim-notify",
 	"karb94/neoscroll.nvim", -- for smooth scroll
-	"Pocco81/auto-save.nvim",
+	-- "Pocco81/auto-save.nvim",
 	"hadronized/hop.nvim",
 	"tpope/vim-surround", --
 	{
@@ -92,6 +92,8 @@ require("lazy").setup({
 	"jay-babu/mason-nvim-dap.nvim", --
 	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
 	{ "folke/neodev.nvim", opts = {} },
+
+
 
 
 

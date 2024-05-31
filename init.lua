@@ -22,3 +22,8 @@ require("core.plugin_config")
 --extra lua
 require("core.highlight")
 require("core.linenocolor")
+
+
+vim.api.nvim_create_autocmd({'FocusLost'}, {
+        command = 'silent! wa'
+    })
