@@ -9,7 +9,7 @@ require("core.plugin_config.noice")
 require("core.plugin_config.nerdtree")
 require("core.plugin_config.dashboard")
 --require("core.plugin_config.gruvbox")
-require("core.plugin_config.catppuccin") -- uncomment if i wanna switch
+--require("core.plugin_config.catppuccin") -- uncomment if i wanna switch
 require("core.plugin_config.airlinetheme")
 require("core.plugin_config.copilot")
 require("core.plugin_config.colorizer")
@@ -18,3 +18,4 @@ require("core.plugin_config.dap")
 require("core.plugin_config.neoscroll")
 --require("core.plugin_config.autosave")
 require("core.plugin_config.hop")
+require(("core.plugin_config.solarized-osaka"))
