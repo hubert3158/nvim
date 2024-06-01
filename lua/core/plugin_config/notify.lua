@@ -1,10 +1,6 @@
 require("notify")("hey there")
-require("notify")("config dap when you have time")
-require("notify")("okay thanks")
-require("notify")("tmux setup")
-require("notify")("indent size and editor config")
-require("notify")("coc for completion may be")
-require("notify")("check out LudoPinelli/comment-box.nvim")
+require("notify")("check out LudoPinelli/comment-box.nvim  <>cbccbox")
+require("notify")("install lazy git")
 
 
 local LazyVim = require("lazy")

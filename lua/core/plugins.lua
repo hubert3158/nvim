@@ -101,6 +101,29 @@ require("lazy").setup({
   lazy = false,
   priority = 1000,
   opts = {},
+},
+
+{ "LudoPinelli/comment-box.nvim", },             -- makes nice comment boxes , press leader c to see options 
+
+
+{
+  "kdheepak/lazygit.nvim",
+  cmd = {
+    "LazyGit",
+    "LazyGitConfig",
+    "LazyGitCurrentFile",
+    "LazyGitFilter",
+    "LazyGitFilterCurrentFile",
+  },
+  -- optional for floating window border decoration
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+  -- setting the keybinding for LazyGit with 'keys' is recommended in
+  -- order to load the plugin when the command is run for the first time
+  keys = {
+    { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+  }
 }
 
 })
